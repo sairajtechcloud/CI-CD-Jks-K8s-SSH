@@ -8,7 +8,7 @@ Jenkins
 Tomcat 
 Docker
 
-Access to the tomcat after successfully deploying :  http://<aws public ip>/webapp/
+Access to the tomcat after successfully deploying : http://<aws public ip>/webapp/
 
 Ex: http://1.1.1.1:8090/webapp/
 
