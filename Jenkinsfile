@@ -28,10 +28,7 @@ pipeline {
     steps{
       withCredentials([usernameColonPassword(credentialsId: 'docker_dileep_creds', variable: 'DOCKER_PASS')]) {
       sh 'docker push dileep95/yankils-hello:$BUILD_NUMBER'
-	  sh 'docker run -d -p 8070:8070 --name yankils dileep95/yankils-hello:$BUILD_NUMBER'
-	   sh 'docker exec -it yankils /bin/bash'
-	     sh 'exit'
-	      sh 'docker restart yankils'
+	  sh 'docker run -d -p 8090:8090 --name yankils dileep95/yankils-hello:$BUILD_NUMBER'
     }
     }
   }  
