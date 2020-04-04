@@ -30,7 +30,7 @@ pipeline {
       sh 'docker push dileep95/yankils-hello:$BUILD_NUMBER'
 	  sh 'docker run -d -p 8070:8070 --name yankils dileep95/yankils-hello:$BUILD_NUMBER'
 	   sh 'docker exec -it yankils /bin/bash'
-	    sh 'sed 's/Connector port="8080"/Connector port="8070"/g' conf/server.xml'
+	    sh "sed -i 's/Connector port="8080"/Connector port="8070"/g' conf/server.xml"
 	     sh 'exit'
 	      sh 'docker restart yankils'
     }
