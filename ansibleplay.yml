@@ -5,7 +5,7 @@
   
   - name: Copy file with owner and permissions
     copy:
-    src: /home/ansible/webapp.war
+    src: /home/ansible/file
     dest: /home/ansible/
   
   - name: stop if we have old docker container
