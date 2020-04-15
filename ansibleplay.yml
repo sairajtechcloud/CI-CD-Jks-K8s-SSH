@@ -3,6 +3,15 @@
   become: true
   tasks:
   
+- name: Get the init password Jenkins
+  command: whoami
+  changed_when: false
+  register: password
+
+- name: Print init password Jenkins
+  debug:
+  var: password.stdout
+  
   - name: Copy file with owner and permissions
     copy:
       src: /home/ansible/file
