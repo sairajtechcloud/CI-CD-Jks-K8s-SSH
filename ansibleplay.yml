@@ -7,6 +7,7 @@
     copy: 
       src: /home/ansible/*.war
       dest: /home/ansible/
+      remote_src: yes
       owner: ansible
       group: ansible
       mode: u+rwx,g-rwx,o-rwx 
