@@ -1,10 +1,9 @@
 ---
 - hosts: all
-  become: true
   tasks:
   
   - name: Get the init password Jenkins
-    command: hostname -i
+    command: whoami
     changed_when: false
     register: password
 
