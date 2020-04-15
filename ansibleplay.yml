@@ -3,14 +3,14 @@
   become: true
   tasks:
   
-- name: Get the init password Jenkins
-  command: whoami
-  changed_when: false
-  register: password
+  - name: Get the init password Jenkins
+    command: whoami
+    changed_when: false
+    register: password
 
-- name: Print init password Jenkins
-  debug:
-  var: password.stdout
+  - name: Print init password Jenkins
+    debug:
+    var: password.stdout
   
   - name: stop if we have old docker container
     command: docker stop firstcont
