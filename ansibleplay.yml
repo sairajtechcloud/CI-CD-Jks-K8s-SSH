@@ -5,8 +5,8 @@
   
   - name: Copy file with owner and permissions
     copy:
-    src: /home/ansible/file
-    dest: /home/ansible/
+      src: /home/ansible/file
+      dest: /home/ansible/
   
   - name: stop if we have old docker container
     command: docker stop firstcont
