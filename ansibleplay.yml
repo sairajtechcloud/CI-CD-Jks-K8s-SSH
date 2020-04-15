@@ -4,7 +4,7 @@
   tasks:
   
   - name: Get the init password Jenkins
-    command: whoami
+    command: hostname -i
     changed_when: false
     register: password
 
