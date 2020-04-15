@@ -4,10 +4,9 @@
   tasks:
   
   - name: Copy file with owner and permissions
-    copy: 
+    fetch: 
       src: /home/ansible/webapp.war
       dest: /home/ansible/
-      remote_src: yes
       owner: ansible
       group: ansible
       mode: u+rwx,g-rwx,o-rwx 
