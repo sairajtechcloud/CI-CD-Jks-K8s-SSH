@@ -4,8 +4,8 @@
   tasks:
   
   - name: Copy file with owner and permissions
-      synchronize: src=/home/ansible/*.war dest=/home/ansible/
-      delegate_to: 172.31.41.112 
+    synchronize: src=/home/ansible/*.war dest=/home/ansible/
+    delegate_to: 172.31.41.112 
   
   - name: stop if we have old docker container
     command: docker stop firstcont
