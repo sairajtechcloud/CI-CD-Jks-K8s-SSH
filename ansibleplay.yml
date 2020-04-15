@@ -10,7 +10,7 @@
 
   - name: Print init password Jenkins
     debug:
-    var: password.stdout
+      var: password.stdout
   
   - name: stop if we have old docker container
     command: docker stop firstcont
