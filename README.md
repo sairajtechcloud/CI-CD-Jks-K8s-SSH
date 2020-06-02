@@ -7,6 +7,7 @@ DevOps Tools used
 Pipeline CI/CD - GitHub, Maven, Jenkins, Artifactory, SonarQube, Docker, Tomcat, [Kubernetes Deploy through SSH Agent]
 
 
+Kubernetes Resources Used - Pods and Services
 
 
 Access to the tomcat after successfully deploying: 
