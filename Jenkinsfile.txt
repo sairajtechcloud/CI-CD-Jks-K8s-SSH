@@ -41,6 +41,7 @@ pipeline {
                 sshagent(['k8s']) {	      
 		   sh "scp -o StrictHostKeyChecking=no services.yml changed-pod.yml services.yml prithdileep@104.154.78.159:/home/prithdileep"
 		script{
+			sh "ssh prithdileep@104.154.78.159 kubectl delete all --all"
 		try{
 		  sh "ssh prithdileep@104.154.78.159 kubectl create -f ."
 		  }
