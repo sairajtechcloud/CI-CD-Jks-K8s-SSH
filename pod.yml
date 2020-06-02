@@ -4,8 +4,8 @@ metadata:
   name: valaxy-deployment
 spec:
   containers:
-     - name: valaxy-devops-project
-       image: dileep95/spring:tagVersion
-       imagePullPolicy: Always
-       ports:
-       - containerPort: 8050
+  - name: valaxy-devops-project
+    image: dileep95/spring:tagVersion
+    imagePullPolicy: Always
+    ports:
+    - containerPort: 8050
