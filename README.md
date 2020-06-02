@@ -1,8 +1,13 @@
 Simple Java Maven Project developed in Jenkins Declarative Pipeline
 
+
+
 DevOps Tools used
 
 Pipeline CI/CD - GitHub, Maven, Jenkins, Artifactory, SonarQube, Docker, Tomcat, [Kubernetes Deploy through SSH Agent]
+
+
+
 
 Access to the tomcat after successfully deploying: 
 
