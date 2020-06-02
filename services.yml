@@ -9,5 +9,5 @@ spec:
     app: valaxy-devops-project
   type: LoadBalancer
   ports:
-    - port: 8050
-      targetPort: 8050
+    - port: 8090
+      targetPort: 8090
