@@ -10,4 +10,4 @@ spec:
       image: dileep95/spring:tagVersion
       imagePullPolicy: Always
       ports:
-      - containerPort: 8050
+      - containerPort: 8090
