@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: valaxy-service
+  name: web-service
   labels:
-    app: valaxy-devops-project
+    app: web-deployment
 spec:
   selector:
-    app: valaxy-devops-project
+    app: web-deployment
   type: LoadBalancer
   ports:
     - port: 8090
