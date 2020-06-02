@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: valaxy-deployment
+  labels:
+    app: valaxy-devops-project
 spec:
   containers:
     - name: valaxy-devops-project
