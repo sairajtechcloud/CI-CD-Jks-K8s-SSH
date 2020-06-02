@@ -11,4 +11,3 @@ spec:
   ports:
     - port: 8050
       targetPort: 8050
-      nodePort: 31200
