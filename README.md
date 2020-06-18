@@ -1,4 +1,4 @@
-Simple Java Maven Project developed in Jenkins Declarative Pipeline
+# Simple Java Maven Project developed in Jenkins Declarative Pipeline
 
 
 
@@ -10,7 +10,7 @@ Pipeline CI/CD - GitHub, Maven, Jenkins, Artifactory, SonarQube, Docker, Tom
 Kubernetes Resources Used - Pods and Services
 
 
-Access to the tomcat after successfully deploying: 
+# Access to the tomcat after successfully deploying: 
 
 Ex: http://35.65.45.127:30035/webapp/
 
