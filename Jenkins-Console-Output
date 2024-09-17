@@ -3,6 +3,7 @@ Obtained Jenkinsfile.txt from git https://github.com/Dileeprithvi/CI-CD-Jks-K8s-
 Running in Durability level: MAX_SURVIVABILITY
 [Pipeline] Start of Pipeline
 [Pipeline] getArtifactoryServer
+// [Pipeline] newMavenBuild
 [Pipeline] newMavenBuild
 [Pipeline] node
 Running on Jenkins in /var/lib/jenkins/workspace/k8ssh
